@@ -8,7 +8,7 @@
 
 .projects__item_img {
   object-fit: contain;
-  width: 300px;
+  width: 100%;
   }
 
 .projects__item:hover{
@@ -19,7 +19,7 @@
 
 .projects__item_title {
   font-weight: 400;
-  color: var(--text-dark);
+  color: var(--text-light);
   padding: 10px 15px 5px;
 }
 

@@ -23,7 +23,7 @@ header {
   align-items: center;
 }
 
-.nav__item a:hover {
+.nav__item_a:hover {
   border: 2px solid var(--text-light);
   border-radius: 24px;
   transition: .3s;

@@ -20,25 +20,25 @@
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#contact">Contact</a>
+            <a class="nav__item_a" href="#contact">Contact</a>
           </li>
           <li class="nav__item">
-            <a href="#skills">Skills</a>
+            <a class="nav__item_a" href="#skills">Skills</a>
           </li>
           <li class="nav__item">
-            <a href="#summary">Summary</a>
+            <a class="nav__item_a" href="#summary">Summary</a>
           </li>
           <li class="nav__item">
-            <a href="#experience">Experience</a>
+            <a class="nav__item_a" href="#experience">Experience</a>
           </li>
           <li class="nav__item">
-            <a href="#education">Education</a>
+            <a class="nav__item_a" href="#education">Education</a>
             </li>
           <li class="nav__item">
-            <a href="#projects">Projects</a>
+            <a class="nav__item_a" href="#projects">Projects</a>
           </li>
           <li class="nav__item">
-            <a href="#language">Language</a>
+            <a class="nav__item_a" href="#language">Language</a>
           </li>
           <li class="nav__item">
             <a class="CV" href="Lizaveta Zhukouskaya.pdf" target="_blank" download>
@@ -125,7 +125,10 @@
         <div class="summary" id="summary">
           <h3 class="subtitle">Summary</h3>
           <p class="description">
-            I've commercial experience of 5 months. I can say that I really like it. Having a liberal arts education, I decided to study the basics of programming to develop technical thinking. In the process of studying, programming fascinated me and I decided to develop in this direction professionally. 
+            I've been studying Frontend since 2020. I can say that I really like it. Having a
+            liberal arts education, I decided to study the basics of programming to develop
+            technical thinking. In the process of studying, programming fascinated me and I
+            decided to develop in this direction professionally.
           </p>
         </div>
         <div class="experience" id="experience">
@@ -198,11 +201,11 @@
         </div>
         <div id="projects">
           <h3 class="subtitle">Projects</h3>
-          <ul class="projects__list">
+          <!-- <ul class="projects__list">
             <li class="projects__item">
               <a href="https://zhukouskaya.github.io/training-shop/" target="_blank">
                 <img src="img/clevershop.png" alt="project Clever Shop" class="projects__item_img">
-                <h3 class="projects__item_title">CleverShop</h3>
+                <h4 class="projects__item_title">CleverShop</h4>
               </a>
             </li>
             <li class="projects__item">
@@ -223,7 +226,55 @@
                 <h3 class="projects__item_title">Aim game</h3>
               </a>
             </li>
-          </ul>
+          </ul> -->
+
+          <div class="container-slider">
+            <div class="sidebar">
+              
+              <div class="cleverShop">
+                <h4 class="projects__item_title">CleverShop</h4>
+              </div>
+              <div class="portfolio">
+                <h3 class="projects__item_title">Portfolio</h3>
+              </div>
+              <div class="shelter">
+                <h4 class="projects__item_title">Shelter</h4>
+              </div>
+              <div class="aim-game">
+                <h4 class="projects__item_title">Aim game</h4>
+              </div>
+            </div>
+            <div class="main-slide">
+              <div>
+                <a href="https://zhukouskaya.github.io/Aim-game/" target="_blank">
+                  <img src="img/aim-game.png" alt="project aim-game" class="projects__item_img">
+                </a>
+              </div>
+              <div>
+                <a href="https://rolling-scopes-school.github.io/zhukouskaya-JSFE2022Q1/shelter/pages/main/index.html" target="_blank">
+                  <img src="img/Shelter.png" alt="project Shelter" class="projects__item_img">
+                </a>
+              </div>
+              <div>
+                <a href="https://rolling-scopes-school.github.io/zhukouskaya-JSFEPRESCHOOL/portfolio/" target="_blank">
+                  <img src="img/Portfolio.png" alt="project Portfolio" class="projects__item_img">
+                </a>
+              </div>
+              <div>
+                <a href="https://zhukouskaya.github.io/training-shop/" target="_blank">
+                  <img src="img/clevershop.png" alt="project Clever Shop" class="projects__item_img">
+                </a>
+              </div>
+            </div>
+            <div class="controls">
+              <button class="down-button">
+                <i class="fas fa-arrow-down"></i>
+              </button>
+              <button class="up-button">
+                <i class="fas fa-arrow-up"></i>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
     </div>
@@ -231,5 +282,6 @@
   <footer>
   </footer>
   <script src="./burger.js"></script>
+  <script src="./slider.js"></script>
 </body>
 </html>
