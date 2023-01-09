@@ -1,0 +1,61 @@
+@media (max-width: 669px) { 
+  .burger { 
+    opacity: 1; 
+    visibility: visible; 
+    position: relative; 
+    width: 30px; 
+    height: 30px; 
+    z-index: 5; 
+    transition: 0.3s ease 0s; 
+  }
+
+  .burger-span, 
+  .burger::after, 
+  .burger::before { 
+    right: 0;
+    position: absolute; 
+    height: 3px; 
+    width: 100%; 
+    background-color: var(--main-bg);
+  }
+
+  .burger::after, 
+  .burger::before { 
+    content: ''; 
+  }
+
+  .burger::after { 
+    top: 0; 
+  }
+
+  .burger::before { 
+    bottom: 0; 
+  }
+
+  .burger-span { 
+    top: 50%; 
+  }
+
+  .burger.active_burg { 
+    transform: rotate(90deg); 
+    transition: 0.3s ease 0s; 
+  }
+
+  .nav { 
+    position: fixed; 
+    top: 0; 
+    right: -100%; 
+    width: 320px; 
+    height: 100%; 
+    background-color: var(--nav-bg-dark);
+    transition: right 0.3s ease-in-out 0s; 
+    overflow: auto; 
+    transform: translate(100%, 0px); 
+  }
+
+  .nav.active_burg { 
+    padding: 70px 0;
+    right: 320px; 
+    visibility: visible;
+  }
+}
