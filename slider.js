@@ -7,7 +7,7 @@ const container = document.querySelector('.container-slider')
 
 let activSlideIndex = 0
 
-sidebar.style.top = `-${(slidesCount - 1)*40}vh`;
+sidebar.style.top = `-${(slidesCount - 1)*27}vh`;
 
 upBtn.addEventListener('click', () => {
   changeSlide('up')
