@@ -4,14 +4,14 @@ const menuLinks = document.querySelectorAll('.nav__item');
 const fone = document.querySelector('.fone');
 const header = document.querySelector('header');
 
-const toggleMenu = function() { 
+function toggleMenu () { 
   document.body.classList.toggle('_lock');
   iconMenu.classList.toggle('active_burg');
   menuBody.classList.toggle('active_burg');
   fone.classList.toggle('fone-active');
   header.classList.toggle('header-active');
 }
-const removeMenu = function() { 
+function removeMenu () { 
   document.body.classList.remove('_lock');
   iconMenu.classList.remove('active_burg');
   menuBody.classList.remove('active_burg');
